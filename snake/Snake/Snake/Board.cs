@@ -105,7 +105,8 @@ namespace Snake
         // places a bomb on the board sometimes
         public void CreateBomb()
         {
-            if (rand.Next(100) == 75)
+            int num = rand.Next(100);
+            if (num % 5 == 0 && num % 8 == 0)
             {
                 SetRandomPiece(SnakePiece.Bomb);
             }

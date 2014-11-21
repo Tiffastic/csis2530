@@ -97,7 +97,6 @@ namespace Snake
 
             if (game.HasCrashed)
             { 
-                //MessageBox.Show(string.Format("Game Over! Apples eaten: {0}", game.ApplesEaten));
                 timer.Stop();
             }
 
